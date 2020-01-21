@@ -109,52 +109,86 @@
   }
 }
 
-.side_bar {
+.side-bar {
   width: 300px;
-  &__user_name {
-    background-color:#253141;
+  color: white;
+  float: left;
+  .header {
+    background-color: #253141;
     height: 100px;
     display: flex;
     align-items: center;
     padding: 0 20px;
+    justify-content: space-between;
     font-weight: bold;
-    &__box {
-      height: 20px;
-      width: 260px;
-      background-color: #333333;
+    .header__name {
+      color: white;
+      font-size: 16px;
+    }
+    .header__lists {
       display: flex;
-      justify-content: space-between;
-      &__name {
-        color: white;
-        font-size: 16px;
-      }
-      &__icon {
-        display: flex;
-        text-decoration: none;
+      text-decoration: none;
+      .list {
         margin-left: 5px;
-        &__edit {
+        .edit {
           color: white;
         }
-        &__new {
+        .icon {
           color: white;
         }
+
       }
     }
+    
   }
-  &__group_list {
+
+  // width: 300px;
+  // &__header {
+  //   background-color:#253141;
+  //   height: 100px;
+  //   display: flex;
+  //   align-items: center;
+  //   padding: 0 20px;
+  //   font-weight: bold;
+  //   &__box {
+  //     height: 20px;
+  //     width: 260px;
+  //     background-color: #333333;
+  //     display: flex;
+  //     justify-content: space-between;
+  //     &__name {
+  //       color: white;
+  //       font-size: 16px;
+  //     }
+  //     &__icon {
+  //       display: flex;
+  //       text-decoration: none;
+  //       margin-left: 5px;
+  //       &__edit {
+  //         color: white;
+  //       }
+  //       &__new {
+  //         color: white;
+  //       }
+  //     }
+  //   }
+  // }
+
+
+
+  .groups {
+    height: calc(100vh - 100px);
     background-color: #2f3e51;
-    height: calc(100% - 100px);
-    padding: 20px 20px;
-    font-weight: bold;
-    &__group {
+    padding: 20px 20px 0;
+    .group {
       margin-bottom: 40px;
       color: white;
     }
-      &__name {
+    .group__name {
       font-size: 15px;
       margin-bottom: 5px;
       }
-      &__message {
+      .group__message {
       font-size: 11px;
       }
   }
