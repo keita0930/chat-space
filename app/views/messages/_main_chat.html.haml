@@ -1,0 +1,26 @@
+.main_chat
+  .main_chat__group_info
+    .main_chat__group_info__left_box
+      .main_chat__group_info__left_box__group text
+      .main_chat__group_info__left_box__group__member
+        %ul.main_chat__group_info__left_box__group__member__user Member:
+        %li.main_chat__group_info__left_box__group__member__user__list aaaa
+    .main_chat__group_info__edit
+      = link_to "Edit", "#", class: "main_chat__group_info__edit__botan"
+  
+  .main_chat__group_chat
+    .main_chat__group_chat__message 
+      .main_chat__group_chat__message__info 
+        %p.main_chat__group_chat__message__info__name bbb
+        %p.main_chat__group_chat__message__info__date ccc
+    .main_chat__group_chat__text aaaa
+  
+  .main_chat__form
+    .main_chat__form__message
+      %form.main_chat__form__message__text
+        %input{type: "text", class: "t", placeholder: "type a message"}
+        .main_chat__form__message__text__image
+          %label{class: "main_chat_form_message__image__i"}
+            = icon('fas', 'image')
+    .main_chat__form__send
+      %input{type: "submit", value: "Send",class: "main_chat__form__send__s"}
