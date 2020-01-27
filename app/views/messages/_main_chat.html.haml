@@ -7,10 +7,6 @@
         %li.member
           - @group.users.each do |user|
             #{user.name}
-        -# %li.member
-        -#   メンバー名
-        -# %li.member
-          -# メンバー名
     .right-header
       .right-header__button
         = link_to 'Edit', edit_group_path(@group.id)
