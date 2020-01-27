@@ -7,10 +7,6 @@
         %li.member
           - @group.users.each do |user|
             #{user.name}
-        -# %li.member
-        -#   メンバー名
-        -# %li.member
-          -# メンバー名
     .right-header
       .right-header__button
         = link_to 'Edit', edit_group_path(@group.id)
@@ -25,4 +21,4 @@
         = f.label :image, class: 'form__mask__image' do
           = icon('fas', 'image', class: 'icon')
           = f.file_field :image, class: 'hidden'
-      = f.submit 'Send', class: 'form__submit'
+      = f.submit 'Send',  class: 'form__submit', date:{disable_with:'送信'}
